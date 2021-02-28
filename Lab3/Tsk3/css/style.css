@@ -1,0 +1,11 @@
+#square td
+{
+    text-align: center;
+    padding: 5px;
+    border: 3px outset mediumspringgreen;
+}
+
+#square tr:first-child
+{
+    background-color: lightgray;
+}

@@ -1,0 +1,11 @@
+#frmt td
+{
+    text-align: center;
+    padding: 5px;
+    border: 3px outset mediumspringgreen;
+}
+
+#frmt tr:first-child
+{
+    background-color: lightgray;
+}

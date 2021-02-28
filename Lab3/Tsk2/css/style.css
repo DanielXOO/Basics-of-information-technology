@@ -1,0 +1,17 @@
+
+
+#multiply td
+{
+    padding: 20px;
+    border: 3px outset rgb(145, 255, 0);
+}
+
+#multiply td:first-child
+{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+#multiply tr:first-child
+{
+    background-color: rgba(0, 0, 0, 0.199);
+}
