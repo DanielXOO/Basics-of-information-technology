@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+@-moz-keyframes hide
+{
+    from
+    {
+        opacity:1;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity:1;
+    }
+}
+
+body
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    color: rgb(95, 84, 247);
+}
+
+.navbar1
+{
+    
+    animation: hide 6s infinite linear;
+    list-style: none; /*убираем обозначение списка*/
+    text-align: center; /*выравнивание тектса по горизонтали */
+}
+
+.navbar1 ul
+{
+    padding-left: 0px; /*убираю левую рамку списка*/
+}
+
+.navbar1 li 
+{
+    display: inline; /*отображение элемента как вложенного */
+    padding: 10px; /*устанавливаю поля со всех сторон*/
+    border-right: 3px dotted rgb(255, 188, 5); 
+    border-left: 3px dotted rgb(255, 188, 5);
+    background-color: rgba(233, 233, 215, 0.808);
+    transition: 0.5s linear; /*создаем линейный переход по времени*/
+}
+
+.navbar1 li:hover
+{
+    background-color: rgba(146, 146, 128, 0.808);
+}
+
+.navbar1 li a
+{
+    text-decoration: none; /*отключаю стиль ссылки*/
+    color: rgb(95, 84, 247);
+}
+
+.navbar2 
+{
+    display: flex;
+    justify-content: center; /*выравниваю элементы по центру. Источник: https://developer.mozilla.org/ru/docs/Web/CSS/justify-content*/
+}
+
+.navbar2 div
+{
+    margin: 3px; /*величина отступа от краев*/
+    padding: 10px;
+    border-right: 3px dotted rgb(255, 188, 5);
+    border-left: 3px dotted rgb(255, 188, 5);
+    background-color: rgba(233, 233, 215, 0.808);
+    transition: 0.5s linear;
+}
+
+.navbar2 div:hover
+{
+    background-color: rgba(146, 146, 128, 0.808);
+}
+
+.navbar2 div a
+{
+    text-decoration: none; /*отключаю стиль ссылки*/
+    color: rgb(95, 84, 247);
+}

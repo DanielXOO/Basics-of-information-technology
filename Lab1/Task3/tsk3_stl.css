@@ -1,0 +1,191 @@
+@-moz-keyframes Gradient
+{
+    from
+    {
+        background-position:79% 0%
+    }
+    50%{
+        background-position:0% 50%
+    }
+    to
+    {
+        background-position:79% 0%
+    }
+}
+
+@-moz-keyframes Anim1
+{
+    from
+    {
+        transform: translate(0px,0px);
+    }
+    50%
+    {
+        transform: translate(370px,370px);
+    }
+    75%
+    {
+        transform: translate(370px,30px);
+    }
+    to
+    {
+        transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes Anim2
+{
+    from
+    {
+        border: tomato 2px outset;
+        transform: scale(1);
+    }
+    25%
+    {
+        border: rgb(119, 0, 255) 4px inset;
+        transform: scale(1.2);
+    }
+    50%
+    {
+        border: rgb(0, 255, 13) 6px outset;
+        transform: scale(2);
+    }
+    75%
+    {
+        border: rgb(25, 0, 255) 4px inset;
+        transform: scale(1.2);
+    }
+    to
+    {
+        border: rgb(238, 255, 0) 8px inset;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes Anim3
+{
+    from
+    {
+        background-color: violet;
+    }
+    50%
+    {
+        background-color: yellowgreen;
+    }
+    75%
+    {
+        background-color: deepskyblue;
+    }
+    to
+    {
+        background-color: coral;
+    }
+}
+
+@-moz-keyframes Anim4
+{
+    from
+    {
+        transform: skew(0deg, 0deg);
+    }
+    50%
+    {
+        transform: skew(15deg, 15deg);
+    }
+    75%
+    {
+        transform: skew(20deg, 30deg);
+    }
+    to
+    {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+body
+{
+    background: linear-gradient(90deg, #4900f5, #fffb03);
+    background-size: 500%;
+    animation: Gradient 6s ease infinite;
+}
+
+.mainbox
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1
+{
+    width: 49%;
+    height: 49%;
+    border: red 4px outset;
+}
+
+.box2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 49%;
+    height: 49%;
+    border: rgb(0, 255, 42) 4px outset;
+}
+
+.box3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    height: 49%;
+    border: blue 4px outset;
+}
+
+.box3:hover div
+{
+    animation: Anim3 2s infinite linear;
+}
+
+.box4
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 49%;
+    height: 49%;
+    border: yellow 4px outset;
+}
+
+.Item1
+{
+    background-color: mediumspringgreen;
+    width: 90px;
+    height: 90px;
+    animation: Anim1 5s infinite ease-in-out;
+}
+
+.Item2
+{
+    background-color: rgb(250, 0, 0);
+    width: 90px;
+    height: 90px;
+    animation: Anim2 5s infinite ease-in-out;
+}
+
+.Item3
+{
+    background-color: rgb(250, 0, 0);
+    width: 90px;
+    height: 90px;
+}
+
+.Item4
+{
+    background-color: rgba(29, 250, 0, 0.397);
+    width: 90px;
+    height: 90px;
+    animation: Anim4 5s infinite ease-in-out;
+}
