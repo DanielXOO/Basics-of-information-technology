@@ -28,6 +28,11 @@
     align-items: center;
 }
 
+#right td
+{
+    border: black 2px solid;
+}
+
 .data
 {
     padding: 10px;
@@ -37,4 +42,28 @@ input
 {
     width: 40%;
     background-color: rgb(162, 236, 162);
+}
+
+@media (max-width: 480px)
+{
+    #left
+    {
+        width: 100%;
+        height: 50%;
+        order: 1;
+    }
+
+    #right
+    {
+        width: 100%;
+        height: 50%;
+        order: 2;
+    }
+
+    #mainframes
+    {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
 }
