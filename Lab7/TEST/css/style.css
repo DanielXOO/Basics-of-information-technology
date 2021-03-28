@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+#parent{
+    display: flex;
+    justify-content: center;
+}
+
+#Area{
+    border: coral 4px outset;
+    height: 40vh;
+    width: 80%;
+}

@@ -1,0 +1,116 @@
+
+h1, h2, h3, span
+{
+    text-align: center; color:hsl(203, 100%, 68%);;
+}
+
+a:active
+{
+    color: blue;
+}
+
+a:visited
+{
+    color: yellow;
+}
+a:hover
+{
+    color: pink;
+}
+div:hover
+{
+    transform: rotate(4deg);
+    transition-duration: .2s;
+}
+.highlight
+{
+    color: orange;
+    font-style: italic;
+}
+ul.lvl1
+{
+    color: lightyellow;
+    font: 15pt Courier New;
+}
+
+ul.lvl2
+{
+    color: rgb(156, 253, 229);
+    font: 15pt Comic Sans MS;
+}
+li.hlvl
+{
+    color: lightcoral;
+}
+ul.lvl3
+{
+    color: rgb(238, 248, 149);
+    font: 15pt Arial;
+}
+ul.mod
+{
+    color: rgb(142, 242, 255);
+
+}
+table
+{
+    color:slateblue;
+    text-shadow:3px 2px #5c5c5c;
+    font: 15pt Courier New;
+    width:500px;
+    padding:5px;
+}
+td
+{
+    background: snow;
+    border:1px solid rgb(255, 0, 200);
+     text-align: center;
+}
+p.pg1
+{
+    color: #000000;
+    font: 11px Comic Sans MS;
+    text-align: left;
+    letter-spacing: 0.6cm;
+    word-spacing: 5mm;
+}
+p.pg2
+{
+    color: lightcoral; 
+    font: 200% cstom;
+    text-align: right;
+    letter-spacing: normal;
+    word-spacing: 200%;
+}
+p.pg3
+{
+    color:rgb(197, 253, 197); 
+    font: 17pt Arial;
+    text-align: center;
+    letter-spacing: 20px;
+    word-spacing: 50px;
+}
+#ol
+{
+    background-color: white;
+    color: black;
+}
+k:first-child
+{
+    background-color:  rgb(167, 187, 241);
+}
+p::first-letter{
+    color:red;
+    border:3px solid brown;
+    font-size:185%;
+}
+p::first-line{
+
+    text-decoration: underline;
+}
+q:before{
+    content:"студент I курса ";
+}
+q::after{
+    content:" проживающий по адресу …";
+}
