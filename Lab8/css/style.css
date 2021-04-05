@@ -1,0 +1,76 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+}
+#mainframes
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#left
+{
+    width: 30%;
+    height: 100%;
+    border: rgb(0, 15, 65) outset 5px;
+    text-align: center;
+}
+
+#right
+{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    border:rgb(0, 21, 92) outset 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#right td
+{
+    border: rgb(104, 62, 255) 2px solid;
+}
+
+.data
+{
+    padding: 10px;
+}
+
+p{
+    margin-top: 2%;
+}
+
+#lvl{
+    display: flex;
+}
+
+#lvl p
+{
+    margin: 1%;
+}
+
+@media (max-width: 480px)
+{
+    #left
+    {
+        width: 100%;
+        height: 50%;
+        order: 1;
+    }
+
+    #right
+    {
+        width: 100%;
+        height: 50%;
+        order: 2;
+    }
+
+    #mainframes
+    {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+}
