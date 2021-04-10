@@ -1,23 +1,34 @@
-function tsk1(){
-    const win = window.open(`about::blank`, "Windows", "width=700,height=400");
-    let str = `<h2 style = "text-align: center">Имя: окна ${win.name}</h2>`
-    str += `<input type = "button" value = "Закрыть окно" onclick="window.close()">`
-    win.document.write(str);
+let resCheck = [];
+let result;
+
+function accept(){
+    let form = document.forms.anketa;
+    result = `<h2 style = "text-decoration: underline; text-align: center;">${form.faculty.value}</h2>`
+    result += `<p>Студент ${form.firstname.value} ${form.lastname.value} специальность ${form.spec.value} курс ${form.grade.value} должен сдавать следующие предметы:</p>`;
+    console.log(form.sbj);
+    form.sbj.forEach(item => {item.checked ? resCheck.push( item.value ): ``});
+    result += `<ul>`;
+    for(let tmp of resCheck){
+        result += `<li>${tmp}</li>`;
+    }
+    result += `</ul>`;
+    
 }
 
-function tsk2(){
-    let str = `
-    <table>
-    <tr><td>Браузер</td><td>${navigator.appCodeName} ${navigator.appName} ${navigator.appVersion}</td></tr>
-    <tr><td>ОС </td><td>${navigator.platform}</td></tr>
-    <tr><td>Включена ли Java </td><td>${navigator.javaEnabled()}</td></tr>
-    <tr><td>Высота и ширина экрана </td><td>${screen.height}x${screen.width} </td></tr>
-    <tr><td>Глубина цвета </td><td>${screen.colorDepth}</td> </tr>
-    <tr><td>URL которые были посещены в данном браузере </td><td>${history.length}</td></tr>
-    <tr><td>URL текущего документа </td><td>${document.URL}</td></tr>
-    <tr><td>Путь к загруженному документу </td><td>${location.pathname}</td></tr>
-    <tr><td>Имя домена и загруженного документа </td><td>${location.hostname} </td></tr>
-    </table>`;
-    const lnk = document.getElementById(`right`);
-    lnk.innerHTML = str;
+function printer(){
+    accept();
+    document.write(result);
+    window.print();
+}
+
+function newForm(){
+    accept();
+    let str = `<form name="newAnketa" action="/"><select>`;
+    for(let tmp of resCheck){
+        str += `<option value="${tmp}">${tmp}</option>`;
+    }
+    str += `</select></form>`;
+    let win = open(`about`, `windows`, "width=700,height=400");;
+    win.document.write(str);
+
 }

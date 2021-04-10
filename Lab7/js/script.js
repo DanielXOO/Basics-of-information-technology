@@ -1,11 +1,36 @@
-function tsk1(){
-    const win = window.open(`about::blank`, "Windows", "width=700,height=400");
-    let str = `<h2 style = "text-align: center">Имя: окна ${win.name}</h2>`
-    str += `<input type = "button" value = "Закрыть окно" onclick="window.close()">`
-    win.document.write(str);
+const lnk = document.getElementById(`right`);
+let win = [];
+function tsk1() {
+    lnk.innerHTML = `
+    <input type = "button" value = "Закрыть окно" onclick="closeWindow()"></input>
+    <input type = "button" value = "Открыть окно" onclick="CreateWindow()"></input>
+    <input type = "button" value = "Добавить текст" onclick="addText()"></input>
+    `;
 }
 
-function tsk2(){
+function addText() {
+    let someTxt = prompt(`Введите текст который надо добавить в окно: `);
+    let nameOfWin = prompt(`Введите имя окна: `);
+    let aimInp = win.find(item => item.name == nameOfWin);
+    aimInp.document.write(`<h2 style = "text-align: center">Имя: окна ${aimInp.name}</h2> <p>${someTxt}</p>`)
+}
+
+function CreateWindow() {
+    let nameOfWin = prompt(`Введите имя окна: `);
+    let tmp = window.open(`about`, nameOfWin, "width=700,height=400");
+    tmp.document.write(``);
+    win.push(tmp);
+
+}
+
+function closeWindow() {
+    let nameOfWin = prompt(`Введите имя окна: `);
+    let aimClose = win.find(item => item.name == nameOfWin);
+    aimClose.close();
+    win.splice(win.indexOf(aimClose), 1);
+}
+
+function tsk2() {
     let str = `
     <table>
     <tr><td>Браузер</td><td>${navigator.appCodeName} ${navigator.appName} ${navigator.appVersion}</td></tr>
@@ -18,6 +43,5 @@ function tsk2(){
     <tr><td>Путь к загруженному документу </td><td>${location.pathname}</td></tr>
     <tr><td>Имя домена и загруженного документа </td><td>${location.hostname} </td></tr>
     </table>`;
-    const lnk = document.getElementById(`right`);
     lnk.innerHTML = str;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,48 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Task 1</title>
 </head>
-<body>
-    <form>
-        <textarea  rows="4" cols="30">Факультет Информационных Технологий</textarea>
 
-        <p>Имя:</p>
-        <input type="text" name="firstname" >
-        <p>Фамилия:</p>
-        <input type="text" name="lastname" >
-        <p>Специальность 
-        <select>
-            <option value="IsiT">ИСиТ</option>
-            <option value="POIT">ПОИТ</option>
-            <option value="Design">ДЭВИ</option>
-            <option value="POSMS">ПОИБМС</option>
-        </select>
-        </p>
-        <p>Укажите ваш курс:</p>
-        <div id = "lvl">
-            <p><input name="grade" type="radio" value="1"> 1</p>
-            <p><input name="grade" type="radio" value="2"> 2</p>
-            <p><input name="grade" type="radio" value="3"> 3</p>
-            <p><input name="grade" type="radio" value="4"> 4</p>
-        </div>
-        <p>Ваш любимый предмет:</p>
-        <div id = "lvl">
-            <p><input name="sbj" type="checkbox" value="BAP"> ОАП</p>
-            <p><input name="sbj" type="checkbox" value="BIT"> ОИТ</p>
-            <p><input name="sbj" type="checkbox" value="Physics"> Физика</p>
-            <p><input name="sbj" type="checkbox" value="Math"> Математика</p>
-        </div>
+<body>
+    <form name="anketa" action="/">
+        <fieldset>
+            <legend> ОПРОС </legend>
+            <textarea rows="4" cols="30" name = "faculty">Факультет Информационных Технологий</textarea>
+            <p></p>
+            <input type="text" name="firstname" placeholder="Имя">
+            <p></p>
+            <input type="text" name="lastname" placeholder="Фамилия">
+            <p>Специальность
+                <select name = spec>
+                    <option value="ИСиТ">ИСиТ</option>
+                    <option value="ПОИТ">ПОИТ</option>
+                    <option value="ДЭВИ">ДЭВИ</option>
+                    <option value="ПОИБМС">ПОИБМС</option>
+                </select>
+            </p>
+            <p>Укажите ваш курс:</p>
+            <div id="lvl">
+                <p><input name="grade" type="radio" value="1"> 1</p>
+                <p><input name="grade" type="radio" value="2"> 2</p>
+                <p><input name="grade" type="radio" value="3"> 3</p>
+                <p><input name="grade" type="radio" value="4"> 4</p>
+            </div>
+            <p>Ваш любимый предмет:</p>
+            <div id="lvl">
+                <p><input name="sbj" type="checkbox" value="ОАП"> ОАП</p>
+                <p><input name="sbj" type="checkbox" value="ОИТ"> ОИТ</p>
+                <p><input name="sbj" type="checkbox" value="Физика"> Физика</p>
+                <p><input name="sbj" type="checkbox" value="История"> История</p>
+                <p><input name="sbj" type="checkbox" value="Математика"> Математика</p>
+            </div>
+            <div id = "lvl">
+                <input type="submit" value="Sumbit"> 
+                <input type="reset" value="Reset">
+                <input type="button" value="Print" onclick="printer()">
+                <input type="button" value="Create form" onclick="newForm()">
+            </div>
+        </fieldset>
     </form>
-    <script src = "js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
