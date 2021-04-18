@@ -11,17 +11,17 @@ function tsk2(){
 }
 
 function tsk3(){
-    let str = `<img src="../img/win.png" height="100px" width="100px" onclick="changeImg()" id = "pic">`
+    let str = `<img src="img/win.png" height="100px" width="100px" onclick="changeImg()" id = "pic">`
     lnk.innerHTML = str;
 }
 
 function tsk4(){
-    let str = `<img src="../img/win.png" height="100px" width="100px" onclick="replaceImg()" id = "pic">`
+    let str = `<img src="img/win.png" height="100px" width="100px" onclick="replaceImg()" id = "pic">`
     lnk.innerHTML = str;
 }
 
 function tsk5(){
-    let str = `<img src="../img/tux.png" height="100px" width="100px" onmouseover="addImg()" onmouseout="subImg()"  id = "pic">`
+    let str = `<img src="img/tux.png" height="100px" width="100px" onmouseover="addImg()" onmouseout="subImg()"  id = "pic">`
     lnk.innerHTML = str;
 }
 
@@ -40,7 +40,7 @@ function changeSize(){
 }
 
 function changeImg(){
-    document.getElementById(`pic`).src = `../img/tux.png`;
+    document.getElementById(`pic`).src = `img/tux.png`;
 }
 
 function replaceImg(){
