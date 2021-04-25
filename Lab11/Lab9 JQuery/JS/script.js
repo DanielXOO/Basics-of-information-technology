@@ -49,33 +49,8 @@ function tsk6(){
     let str = `<p id = "changes">Нарисовать цветную рамку произвольного стиля вокруг любого 
     абзаца при двойном щелчке (событие dblclick) на абзац.</p>`;
     lnk.innerHTML = str;
-        $(`#changes`).dblclick(()=>{
-            $(`#changes`).css(`border`, `gray outset 5px`);  
-        });
+    $(`#changes`).dblclick(()=>{
+        $(`#changes`).css(`border`, `gray outset 5px`);  
+    });
 }
 
-
-
-function changeSize(){
-    event.srcElement.style.fontSize = `40px`;
-}
-
-function changeImg(){
-    document.getElementById(`pic`).src = `img/tux.png`;
-}
-
-function replaceImg(){
-    document.getElementById(`right`).innerHTML = `<p>Hello</p>`;
-}
-
-function addImg(){
-    event.srcElement.style.width = `200px`;
-}
-
-function subImg(){
-    event.srcElement.style.width = `100px`;
-}
-
-function createBorder(){
-    event.srcElement.style.border = `gray outset 5px`
-}
