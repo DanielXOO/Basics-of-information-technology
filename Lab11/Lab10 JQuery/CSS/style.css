@@ -49,4 +49,5 @@ input
 #text
 {
     position: absolute;
+    resize: none;
 }

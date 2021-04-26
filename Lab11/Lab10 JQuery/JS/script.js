@@ -6,16 +6,23 @@ function Coordinate() {
 }
 
 function tsk1() {
-    let str = `<img src="img/octoCat.png" draggable="false" height="100px" width="100px"  id = "pic"><textarea  rows="4" cols="30" id = "text"></textarea>`
+    let str = `<img src="img/octoCat.png" draggable="false" height="100px" width="100px"  id = "pic"><textarea id = "text" draggable="false" rows="4" cols="30"></textarea>`
     lnk.innerHTML = str;
+    $(`#text`).css(`resize`, `none`)
     $(`#pic`).draggable();
-    $(`#text`).draggable();
+    // ????????
+    $(`#text`).draggable({
+        cancel: ".title"
+      });
 }
 
 function tsk2() {
     let str = `<img src="img/octoCat.png"  draggable="false" height="100px" width="100px"  id = "pic">`
     lnk.innerHTML = str;
-    moveByLine(document.getElementById(`pic`));
+    $(`#pic`).animate({
+        left: `800px`,
+        top: `200px`
+    },400);
 }
 
 function tsk3() {
@@ -50,7 +57,6 @@ function tsk4() {
     lnk.innerHTML = str;
 }
 
-
 function moveByRand(aim) {
     let cursPosition = new Coordinate();
     cursPosition.x = aim.getBoundingClientRect().left;
@@ -58,13 +64,13 @@ function moveByRand(aim) {
     let firstPos = new Coordinate();
     firstPos.x = cursPosition.x;
     firstPos.y = cursPosition.y;
-    document.addEventListener(`keypress`, event => {
+    document.addEventListener(`keypress`, () => {
         let i = 0;
         let inter = setInterval(() => {
             i++;
-            aim.style.top = firstPos.y + Math.cos(cursPosition.y++) * 40 + `px`;
+            firstPos.y + Math.cos(cursPosition.y++) * 40 + `px`;
             if (i < 100) {
-                aim.style.left = `${++cursPosition.x}px`;
+                left: `${++cursPosition.x}px`
             }
             else {
                 aim.style.left = `${--cursPosition.x}px`;
