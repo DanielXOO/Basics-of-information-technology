@@ -19,16 +19,33 @@ function tsk1() {
 function tsk2() {
     let str = `<img src="img/octoCat.png"  draggable="false" height="100px" width="100px"  id = "pic">`
     lnk.innerHTML = str;
-    $(`#pic`).animate({
-        left: `800px`,
-        top: `200px`
-    },400);
+    $(`#pic`).click(()=>{
+        $(`#pic`).animate({
+            left: `800px`,
+            top: `200px`
+        },400);
+    });
 }
 
 function tsk3() {
     let str = `<img src="img/octoCat.png"  draggable="false" height="100px" width="100px"  id = "pic">`
     lnk.innerHTML = str;
-    moveByRand(document.getElementById(`pic`));
+    let Position = $(`#pic`).last().offset();
+    for(let i = 0; i < 70; i++)
+    {
+        $(`#pic`).animate({
+            left: `${Position.left + i}px`,
+            top: `${Position.top + Math.sin(i) * 10}px`
+        },20);
+    }
+
+    for(let i = 70; i > 0; i--)
+    {
+        $(`#pic`).animate({
+            left: `${Position.left + i}px`,
+            top: `${Position.top + Math.sin(i) * 10}px`
+        },20);
+    }
 }
 
 function tsk4() {
@@ -56,32 +73,6 @@ function tsk4() {
     `
     lnk.innerHTML = str;
 }
-
-function moveByRand(aim) {
-    let cursPosition = new Coordinate();
-    cursPosition.x = aim.getBoundingClientRect().left;
-    cursPosition.y = aim.getBoundingClientRect().top;
-    let firstPos = new Coordinate();
-    firstPos.x = cursPosition.x;
-    firstPos.y = cursPosition.y;
-    document.addEventListener(`keypress`, () => {
-        let i = 0;
-        let inter = setInterval(() => {
-            i++;
-            firstPos.y + Math.cos(cursPosition.y++) * 40 + `px`;
-            if (i < 100) {
-                left: `${++cursPosition.x}px`
-            }
-            else {
-                aim.style.left = `${--cursPosition.x}px`;
-            }
-            if (cursPosition.x == firstPos.x) {
-                clearInterval(inter);
-            }
-        }, 90);
-    });
-}
-
 function polyline(color, pts, ctx) {
     ctx.strokeStyle = color;
     ctx.beginPath();
