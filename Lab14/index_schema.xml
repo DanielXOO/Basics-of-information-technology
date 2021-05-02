@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "style.xslt"?>
+
+<root>
+    <university>
+        <name>БГТУ</name>
+        <score>302</score>
+        <places>230</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>      
+    </university>
+</root>

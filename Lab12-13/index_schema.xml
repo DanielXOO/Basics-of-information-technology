@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type = "text/css" href = "css/style.css"?>
+
+<root xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com/xml sсhema.xsd">
+    <university>
+        <name>БГТУ</name>
+        <score>302</score>
+        <places>230</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>
+    </university>
+    <university>
+        <name>БГУИР</name>
+        <score>270</score>
+        <places>454</places>
+        <city>Минск</city>      
+    </university>
+</root>
