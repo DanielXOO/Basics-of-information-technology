@@ -1,0 +1,17 @@
+.menu-item{
+    border: 2px soild #66CDAA;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    }
+    
+    .menu-item .submenu{
+    height: 40px;
+    width: auto;
+    background: rgb(47, 0, 255);
+    padding: 3px;
+    color: aliceblue;
+    position: absolute;
+    cursor: pointer;
+    }
