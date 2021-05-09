@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.xslt" type="text/xsl"?>
+
+<table>
+    <person>
+        <name>Егор</name>
+        <surname>Пупельман</surname>
+        <mark>10</mark>
+        <score>330</score>
+        <year>2090</year>
+    </person>
+    <person>
+        <name>Андрей</name>
+        <surname>Боброзда</surname>
+        <mark>0</mark>
+        <score>304</score>
+        <year>1900</year>
+    </person>
+    <person>
+        <name>Даниил</name>
+        <surname>Чулинчович</surname>
+        <mark>5</mark>
+        <score>304</score>
+        <year>2007</year>
+    </person>
+</table>
