@@ -5,10 +5,11 @@
             <body>
                 <table>
                     <tr>
-                        <th>Университет</th>
-                        <th>Проходной балл</th>
-                        <th>Кол-во мест</th>
-                        <th>Город</th>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Оценка</th>
+                        <th>Баллы</th>
+                        <th>Год</th>
                     </tr>
                     <xsl:for-each select="table/person">
                                 <xsl:sort select="year" data-type="number" order="descending" />

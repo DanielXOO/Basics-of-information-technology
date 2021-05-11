@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id = "main">
+        <h1> Picture SVG</h1>
+            <svg width="500px" height="500px" 
+            xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <rect width="100%" height="100%" fill="linen"/>
+                <defs>
+                    <path id="heart" d="M 10,30
+                    A 20,20 0,0,1 50,30
+                    A 20,20 0,0,1 90,30
+                    Q 90,60 50,90
+                    Q 10,60 10,30 z" />
+                </defs>
+                <use xlink:href="#heart" class="color1" x="50%" y="50%" transform="translate(-3)"/>
+                <use xlink:href="#heart" class="color2" x="70%" y="50%" transform="skewY(-10)"/>
+                <use xlink:href="#heart" class="color3" x="30%" y="50%" transform="skewX(-10)"/>
+                <use xlink:href="#heart" class="color4" x="50%" y="30%" transform="scale(0.5)"/>
+                <use xlink:href="#heart" class="color5" x="50%" y="70%" transform="rotate(10 10 26)" />
+            </svg>
+        
+    </div>
+</body>
+</html>

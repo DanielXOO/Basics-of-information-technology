@@ -1,0 +1,26 @@
+#choose{
+    display: flex;
+}
+#files{
+    padding: 2%;
+}
+#control{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px rgba(128, 128, 128, 0.527) solid;
+    width: 90%;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info{
+    margin: 2%;
+    padding: 1%;
+    
+    width: 50%;
+}
