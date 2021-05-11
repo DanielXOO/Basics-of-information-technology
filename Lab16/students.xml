@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<table>
+    <student>
+        <faculty>ФИТ</faculty>
+        <name>Даниил</name>
+        <surname>Кулинкович</surname>
+        <spec>ИСиТ</spec>
+        <group>1</group>
+    </student>
+    <student>
+        <faculty>ХТиТ</faculty>
+        <name>Химик</name>
+        <surname>Химический</surname>
+        <spec>Химия</spec>
+        <group>999</group>
+    </student>
+    <student>
+        <faculty>ФИТ</faculty>
+        <name>Андрей</name>
+        <surname>Борозда</surname>
+        <spec>Дэви</spec>
+        <group>9</group>
+    </student>
+</table>
