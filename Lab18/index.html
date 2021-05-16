@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1> Gallery SVG</h1>
+        <div class="paint">
+            <svg width="50%" height="50%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <rect width="30%" height="30%" fill="black">
+                    <animate attributeType="XML" attributeName="x" from="0" to="50" dur="5s" repeatCount="indefinite" />
+                </rect>
+            </svg>
+        </div>
+        <div class="paint">
+            <svg width="50%" height="50%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="50%" cy="50%" r="50" stroke="gray" fill="white" stroke-width="5">
+                    <animate attributeType="XML" attributeName="r" to="1" dur="2s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <div class="paint">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="50%" cy="50%" r="50" stroke="gray" fill="white" stroke-width="5">
+                    <animate attributeType="XML" attributeName="cx" to="50" dur="2s" repeatCount="indefinite" />
+                    <animate attributeType="XML" attributeName="fill" from="red" to="yellow" dur="2s"
+                        repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <div class="paint">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="50%" cy="50%" r="50" stroke="gray" fill="white" stroke-width="5">
+                    <animate attributeType="XML" attributeName="stroke-width" to="20" dur="2s" repeatCount="indefinite"
+                        begin="mouseover" end="mouseout" />
+                    <animate attributeName="fill" values="white; blue; red;" dur="10s" fill="freeze" />
+                </circle>
+            </svg>
+        </div>
+        <div class="paint">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="50%" cy="50%" r="50" stroke="gray" fill="white" stroke-width="5">
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="1.5"
+                        dur="3s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <div class="paint">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <path id="heart" d="M 10,30
+                    A 20,20 0,0,1 50,30
+                    A 20,20 0,0,1 90,30
+                    Q 90,60 50,90
+                    Q 10,60 10,30 z" />
+                </defs>
+                <use xlink:href="#heart" class="color1" x="10%" y="10%" transform="translate(-3)"/>
+            </svg>
+        </div>
+        <div class="paint">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <circle cx="50%" cy="50%" r="50" stroke="red" fill="white" stroke-width="5" 
+                stroke-dashoffset="94%" stroke-dasharray="210, 100">
+                <animate attributeType="XML" attributeName="stroke-dashoffset" to="0" dur="2s" repeatCount="indefinite"/>
+                   
+                </circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>

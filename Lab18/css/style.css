@@ -1,0 +1,43 @@
+#main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paint{
+    height: 30vh;
+    width: 40%;
+    border: 1px rgba(128, 128, 128, 0.466) solid ;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+use.color1{ 
+    fill: blue;
+    stroke:yellow;
+    stroke-width: 3px;
+}
+use.color2{ 
+    fill:red; 
+    stroke:blue;
+    stroke-width: 3px;
+}
+use.color3{ 
+    fill:green;
+    stroke:red;
+    stroke-width: 3px;
+}
+use.color4{ 
+    fill:purple; 
+    stroke:orange;
+    stroke-width: 3px;
+}
+use.color5{ 
+    fill:yellow;
+    stroke:blue;
+    stroke-width: 3px;
+}
