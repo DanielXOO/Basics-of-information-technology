@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:20;stroke-miterlimit:22.9256}
+    .fil3 {fill:none}
+    .fil1 {fill:#FEFEFE}
+    .fil4 {fill:#2B2A29}
+    .fil0 {fill:#FFED00}
+    .fil2 {fill:#E31E24}
+   ]]>
+  </style>
+     <clipPath id="id0">
+      <path d="M7008.28 12377.42l4952.32 0 0 4894.6 -4952.32 0 0 -4894.6z"/>
+     </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1807189553312">
+   <g>
+    <g style="clip-path:url(#id0)">
+     <image x="7008.28" y="12377.42" width="4952.32" height="4894.6" xlink:href="complex_Images\complex_ImgID1.png"/>
+    </g>
+   </g>
+   <ellipse class="fil0 str0" cx="9479.44" cy="14824.72" rx="1907.87" ry="1872.54"/>
+   <circle class="fil1 str0" cx="10056.51" cy="14377.2" r="341.53"/>
+   <circle class="fil1 str0" cx="8867.04" cy="14365.42" r="341.53"/>
+   <g>
+    <path class="fil2" d="M8951.37 15149.12c288.5,193.47 534.9,449.18 781.98,580.58 75.87,40.35 234.87,-35.22 311.39,-68.81 57.93,16.85 84.91,11.93 99.91,78.06 156.53,689.86 -1083.11,684.46 -1409.06,386.61 -269.64,-59.59 -439.92,-326.47 -380.33,-596.11 59.59,-269.64 326.47,-439.92 596.11,-380.33z"/>
+   </g>
+   <path class="fil3" d="M8843.48 15637.34c12.58,2.78 939.96,735.52 1195.2,105.66 13.18,-32.53 6.06,-48.83 6.06,-82.11"/>
+   <polyline class="fil3 str0" points="9479.44,16697.26 9502.99,21737.81 11340.2,23103.94 "/>
+   <line class="fil3 str0" x1="9502.99" y1="21737.81" x2="7901.32" y2= "22915.51" />
+   <polyline class="fil3 str0" points="12188.15,17498.1 9487.59,18440.22 6747.18,17545.21 "/>
+   <ellipse class="fil4 str0" cx="8993.39" cy="14480.29" rx="126.35" ry="114.87"/>
+   <ellipse class="fil4 str0" cx="10167.23" cy="14507.2" rx="110.72" ry="130"/>
+  </g>
+ </g>
+</svg>

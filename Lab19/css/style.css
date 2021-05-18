@@ -1,0 +1,42 @@
+#main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paint{
+    height: 30vh;
+    width: 40%;
+    border: 1px rgba(128, 128, 128, 0.466) solid ;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text1{
+    fill:none;
+    stroke: red;
+    stroke-width: 2px;
+    font-size: 50px;
+}
+
+tspan{
+    word-spacing: 100px;
+    font-size: 30px;
+    stroke:none;
+    fill:greenyellow;
+}
+
+#text2{
+    letter-spacing: 10px;
+    text-decoration: underline;
+}
+
+.shadow {
+    filter: drop-shadow( 3px 3px 3px rgba(0, 0, 0, 0.5));
+    fill-opacity: 0.5;
+  }
+  

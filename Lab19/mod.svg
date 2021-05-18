@@ -1,0 +1,10 @@
+<?xml-stylesheet href="css/style.css" type="text/css"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <rect class="shadow" height="194" width="207" y="267.5" x="245" stroke="#000" stroke-width="10px" fill="#fff"/>
+  <ellipse class="shadow" ry="61" rx="61" id="svg_2" cy="362" cx="350" stroke="none" fill="red"/>
+  <line class="shadow" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="538.37521" x2="245" y1="277" x1="245" stroke="#000" stroke-width="10px" fill="none"/>
+  <polygon points="100,10 40,198 190,78 10,78 160,198" fill="red"/>
+ </g>
+</svg>
