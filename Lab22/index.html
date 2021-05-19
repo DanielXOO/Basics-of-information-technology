@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAST LAB!!!!!</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>Я, <mark>Кулинкович Даниил Алексеевич</mark>, изучаю HTML5</header>
+    <main>
+        <nav class="labs">
+            <div><a href="#">LAB 1</a></div>
+            <div><a href="#">LAB 2</a></div>
+            <div><a href="#">LAB 3</a></div>
+        </nav>
+        <form action="/">
+            <fieldset>
+                <legend>Форма для footer'a</legend>
+                <label>Mail</label>
+                <input type="email" id="mail" placeholder="dankulinkovich@gmail.com" required/>
+                <label>URL</label>
+                <input type="url" id="url"/>
+                <label>Telephone</label>
+                <input type="tel" id="tel" required/>
+                <label>Number less 10</label>
+                <input type="number"  max="10"/>
+                <label>Range</label>
+                <input type=range min="0" max="100" value="0" step="1"/>
+                <label>Search</label>
+                <input type="search">
+                <label>Color</label>
+                <input type="color">
+                <label>Datalist</label>
+                <input list="distrLinux" id="linux" name="linux" />
+                <datalist id="distrLinux">
+                    <option value="ubuntu">
+                    <option value="mint">
+                    <option value="kali">
+                    <option value="arch">
+                    <option value="fedora">
+                </datalist>
+                <label>Output</label>
+                <output name="result">6000</output>
+                <label>Data</label>
+                <data value="black">DARK</data>
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

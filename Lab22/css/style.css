@@ -1,0 +1,47 @@
+header{
+    text-align: center;
+    font-size: 30px;
+}
+
+header mark{
+    font-style: italic;
+    color: red;
+    background-color: white;
+}
+
+.labs{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 1%;
+    justify-content: center;
+}
+
+.labs div{
+    margin: 2%;
+    padding: 1%;
+    border: rgb(95, 95, 252) 2px solid;
+}
+
+.labs div:hover{
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.labs div a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 100%;
+} 
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
