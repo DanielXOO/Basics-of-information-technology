@@ -1,0 +1,17 @@
+.paint{
+    height: 40vh;
+    width: 90%;
+    border: 1px rgba(128, 128, 128, 0.466) solid ;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tspan{
+    word-spacing: 100px;
+    font-size: 30px;
+    stroke: blue;
+    stroke-width: 1px;
+    fill:greenyellow;
+}

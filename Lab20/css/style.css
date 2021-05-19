@@ -1,0 +1,49 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.video{
+    width: 80%;
+    height: 40vh;
+}
+
+.audio{
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+}
+#info{
+    height: 80%;
+    width: 100%;
+    border: 1px black solid;
+}
+
+#control{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+mark{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    background-color: chartreuse;
+}
